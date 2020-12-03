@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_background_supplier_item"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_date_area_payment_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/bellefair"
+                android:text="תאריך"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/payment_date_text_view_payment_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bellefair"
+                android:text="11/01/2020"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_amount_area_payment_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/linear_layout_date_area_payment_item"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/bellefair"
+                android:text="סכום"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/payment_amount_text_view_payment_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bellefair"
+                android:text="1000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/check_or_cash_text_view_payment_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/bellefair"
+                android:text="מזומן/צק"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/note_text_view_payment_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="note"
+            android:layout_below="@id/linear_layout_amount_area_payment_item"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:fontFamily="@font/bellefair"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:visibility="gone"/>
+
+
+
+        <ImageView
+            android:id="@+id/payment_image_view_payment_item"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/note_text_view_payment_item"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"/>
+
+
+        <ImageButton
+            android:id="@+id/share_btn_payment_item"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/ic_share_black_24dp"
+            android:padding="8dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupplierProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/total_layout_supplier_profile_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/supplier_name_text_view_supplier_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/bellefair"
+            android:gravity="center"
+            android:text="שם הספק"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/note_supplier_text_view_supplier_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/supplier_name_text_view_supplier_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="@font/bellefair"
+            android:text="מידע נוסף על הספק"
+            android:maxLines="6"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/debt_amount_text_view_supplier_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/note_supplier_text_view_supplier_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="@font/bellefair"
+            android:text="150$"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/debt_amount_text_view_supplier_profile"
+            android:layout_marginTop="45dp">
+
+
+            <Button
+                android:id="@+id/add_bill_task_btn_supplier_profile"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/custom_background"
+                android:text="הוספת חשבונית"
+                android:textColor="#2899ff" />
+
+
+            <Button
+                android:id="@+id/add_payment_task_btn_supplier_profile"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/custom_background"
+                android:text="הוספת תשלום"
+                android:textColor="#2899ff" />
+
+
+            <Button
+                android:id="@+id/go_to_bill_list_activity_btn_supplier_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_bill_task_btn_supplier_profile"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/custom_background"
+                android:text="צפה בכרטיסיית חשבוניות"
+                android:textColor="#2899ff" />
+
+
+            <Button
+                android:id="@+id/go_to_payment_list_activity_btn_supplier_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/go_to_bill_list_activity_btn_supplier_profile"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/custom_background"
+                android:text="צפה בכרטיסיית תשלומים"
+                android:textColor="#2899ff" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar_supplier_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

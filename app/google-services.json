@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "4836144726",
+    "firebase_url": "https://manage-invoice.firebaseio.com",
+    "project_id": "manage-invoice",
+    "storage_bucket": "manage-invoice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4836144726:android:9591a7feb98b84d96badf7",
+        "android_client_info": {
+          "package_name": "com.example.managinvoice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4836144726-o8rh213smf1l2gq91drhc8l1m7lrlh3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7jP0_vV1r6VVEX8h_VGl2tJa4F2P_SNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4836144726-o8rh213smf1l2gq91drhc8l1m7lrlh3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

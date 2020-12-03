@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstNavigationActivity">
+
+    <TextView
+        android:id="@+id/head_line_in_relative_layout_first_navigation_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ניהול חשבונות"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="@font/bellefair"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_logo_area_first_navigation_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/head_line_in_relative_layout_first_navigation_activity">
+
+
+
+    <ImageView
+        android:id="@+id/logo_background_image_view_navigation_activity"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_background1"/>
+
+
+    <ImageView
+        android:id="@+id/logo_image_view_navigation_activity"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_account_balance_wallet_black_24dp"
+        />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_suppliers_costumers_btns_area_first_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    <Button
+        android:id="@+id/suppliers_btn_navigation_activity"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="ספקים"
+        android:textSize="22sp"
+        android:textColor="#2899ff"
+        android:background="@drawable/custom_background"/>
+
+
+
+    <Button
+        android:id="@+id/costumers_btn_navigation_activity"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/suppliers_btn_navigation_activity"
+        android:layout_marginTop="22dp"
+        android:text="לקוחות"
+        android:textSize="22sp"
+        android:textColor="#2899ff"
+        android:background="@drawable/custom_background" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

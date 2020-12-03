@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/linear_layout_supplier_item"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_background_supplier_item"
+        android:padding="8dp"
+        >
+
+
+    <TextView
+        android:id="@+id/supplier_name_text_view_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="שם הספק"
+        android:textSize="26sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/bellefair"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

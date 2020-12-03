@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Manag Invoice</string>
+    <string name="delete">DELETE</string>
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity">
+
+
+
+    <TextView
+        android:id="@+id/head_line_add_task_activity_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="שם הספק"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:fontFamily="@font/bellefair"/>
+
+
+    <RadioGroup
+        android:id="@+id/radio_group_options_payment_add_task_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/head_line_add_task_activity_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp">
+
+
+        <RadioButton
+            android:id="@+id/radio_btn_check_add_task_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="צ׳ק"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bellefair"/>
+
+
+        <RadioButton
+            android:id="@+id/radio_btn_cash_add_task_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="מזומן"
+            android:checked="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bellefair"/>
+
+
+
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_scan_payment_bill_edit_text_add_task_acitivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/radio_group_options_payment_add_task_activity"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/scan_payment_bill_text_view_add_task_acitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="סרוק חשבונית"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="@font/bellefair"
+            />
+
+
+        <ImageButton
+            android:id="@+id/take_pic_bill_image_btn_add_task_activity"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/ic_camera_alt_black_24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"/>
+
+
+        <EditText
+            android:id="@+id/note_bill_edit_text_add_task_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="הוספת הערה"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/bellefair"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/amount_of_money_edit_text_add_task_activity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_scan_payment_bill_edit_text_add_task_acitivity"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:hint="סכום"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:layout_marginRight="22dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bellefair"/>
+
+
+    <TextView
+        android:id="@+id/date_of_bill_payment_text_view_add_task_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="תאריך"
+        android:textSize="18sp"
+        android:layout_below="@id/amount_of_money_edit_text_add_task_activity"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bellefair"/>
+
+
+
+
+    <Button
+        android:id="@+id/save_payment_bill_btn_add_task_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="שמור"
+        android:textColor="#2899ff"
+        android:background="@drawable/custom_background"/>
+
+
+
+    <ImageView
+        android:id="@+id/image_view_payment_or_bill_add_task_activity"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/date_of_bill_payment_text_view_add_task_activity"
+        android:layout_above="@id/save_payment_bill_btn_add_task_activity"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_save_image_add_task_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/save_payment_bill_btn_add_task_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

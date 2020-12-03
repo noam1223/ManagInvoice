@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreens.LoginActivity">
+
+
+
+    <TextView
+        android:id="@+id/login_head_line_text_view_login_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="כניסה למערכת"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/bellefair"
+        android:textColor="#000000"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_login_area_login_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/user_name_edit_text_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="שם משתמש"
+            android:gravity="center"
+            android:fontFamily="@font/bellefair"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+
+
+        <EditText
+            android:id="@+id/password_edit_text_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="סיסמא"
+            android:gravity="center"
+            android:fontFamily="@font/bellefair"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="על מנת להירשם עם שם משתמש זה"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/bellefair"
+            android:textColor="#000000"/>
+
+
+
+        <TextView
+            android:id="@+id/navigate_to_register_screen_text_view_login_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="לחץ כאן"
+            android:layout_marginTop="18dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/bellefair"
+            android:textColor="#2899ff"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/login_btn_login_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/custom_background"
+        android:textColor="#2899ff"
+        android:text="התחבר"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

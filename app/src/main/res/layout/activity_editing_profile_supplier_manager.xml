@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditingProfileSupplierActivity">
+
+
+
+    <TextView
+        android:id="@+id/head_line_text_view_editing_profile_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="מילוי פרטי הספק"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:fontFamily="@font/bellefair"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    <EditText
+        android:id="@+id/supplier_name_edit_text_editing_profile_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="שם הספק"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/bellefair"
+        android:inputType="textPersonName"/>
+
+
+    <EditText
+        android:id="@+id/contact_name_edit_text_editing_profile_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/supplier_name_edit_text_editing_profile_supplier"
+        android:layout_marginTop="12dp"
+        android:hint="שם איש הקשר"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:fontFamily="@font/bellefair" />
+
+
+    <EditText
+        android:id="@+id/telephone_edit_text_editing_profile_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_name_edit_text_editing_profile_supplier"
+        android:layout_marginTop="12dp"
+        android:hint="מס׳ טלפון"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:gravity="center"
+        android:inputType="phone"
+        android:textStyle="bold"
+        android:fontFamily="@font/bellefair"/>
+
+
+
+
+    <EditText
+        android:id="@+id/address_edit_text_editing_profile_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telephone_edit_text_editing_profile_supplier"
+        android:layout_marginTop="12dp"
+        android:hint="כתובת"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/bellefair"/>
+
+
+
+    <EditText
+        android:id="@+id/note_edit_text_editing_profile_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_edit_text_editing_profile_supplier"
+        android:layout_marginTop="12dp"
+        android:hint="הערות נוספות"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/bellefair"/>
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/finish_fulfill_form_btn_editing_profile_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הוסף"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:textColor="#2899ff"
+        android:background="@drawable/custom_background"/>
+
+</RelativeLayout>

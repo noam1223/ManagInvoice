@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentOrBillListActivity">
+
+
+
+    <TextView
+        android:id="@+id/head_line_text_view_payment_or_bill_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="כל החשבונות או תשלומים"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:fontFamily="@font/bellefair"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/payment_or_bill_recycler_view_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head_line_text_view_payment_or_bill_list"
+        android:layout_above="@id/total_sum_payment_or_bill_list"
+        android:layout_marginTop="12dp"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:id="@+id/total_sum_payment_or_bill_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="סכום כולל: "
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/bellefair"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+
+</RelativeLayout>
